@@ -164,7 +164,7 @@ public class Controller extends Application {
                             String absolutePath = ((FileTreeItem) newValue).getFile().getAbsolutePath();
                             String filePath = absolutePath.substring(
                                 absolutePath.indexOf("dir") + "dir".length() + File.separator.length());
-                            String clazz = filePath.replaceAll(File.separator, ".");
+                            String clazz = filePath.replace(File.separator, ".");
                             showClazz(clazz);
                         }
                     }
